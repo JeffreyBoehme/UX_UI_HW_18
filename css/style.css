@@ -1,6 +1,7 @@
 body {
     margin: 0;
     font-family: 'Montserrat', sans-serif;
+    background-color:#F3F3F5;
   }
 /* Navigation */
   .topnav {
@@ -8,7 +9,7 @@ body {
     flex-direction: row;
     background-color:#EAECED;
     
-
+    border-bottom: 5px solid #8C94A4;
 align-items: center;    
 
   } 
@@ -69,7 +70,18 @@ border:solid red 1px;
     width:150px;
     height:50px;
     font-size: 18pt;
+    border-radius: 10px;
   }
+  button:hover {
+    background-color: silver;
+    color: black;
+  }
+  
+  button.active {
+    background-color: #04AA6D;
+    color: black;
+  }
+
 
 
   /* Hero */
@@ -126,6 +138,7 @@ margin:0px 0px 50px 0px;
   height:250px;
   border-radius: 10px;
   object-fit:cover;
+  border-bottom: 5px solid #8C94A4;
 }
 
 /* my work */
@@ -188,7 +201,7 @@ padding:25px;
 .workimg{
   width:400px;
   border-radius: 10px;
-
+  border-bottom: 5px solid #8C94A4;
   
 }
 
@@ -336,7 +349,7 @@ width:100%;
       display:grid;
     width:100%;
       grid-template-columns:100%;
-      grid-template-rows:300px 250px 300px 250px 300px 250px;
+      grid-template-rows:300px 300px 300px 300px 300px 300px;
       grid-template-areas:
       "workimg1"
       "workinfo1"
