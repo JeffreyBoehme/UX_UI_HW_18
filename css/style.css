@@ -10,9 +10,16 @@ body {
     background-color:#EAECED;
     
     border-bottom: 5px solid #8C94A4;
-align-items: center;    
-
+    align-items: center;    
+    position:fixed;
+    width:100%;
+    z-index:101;
   } 
+
+  .topgap{
+    height:80px;
+
+  }
 
   .topleft {
   
@@ -36,15 +43,17 @@ padding:15px;
     display:flex;
     width: 250px;
     justify-content:space-between;
+    margin:0px 0px 0px 25px;  
   }
 
-  .topnav a {
+  .navbutton {
     color: black;
     text-align: center;
-    font-size:25px;
+    font-size:29pt;
     font-family: 'Montserrat', sans-serif;
-    font-style:bold;
-  
+    font-style:normal;
+    padding:0px 15px;
+
   }
   
   .topnav a:hover {
@@ -62,9 +71,14 @@ padding:15px;
 
   }
 
+  
+
+
   .toprightimage{
-border:solid red 1px;
+  border:solid red 1px;
+
   }
+  
 
   button{
     width:150px;
@@ -89,12 +103,212 @@ border:solid red 1px;
   .hero{
     display:block;
     width:100%;
-    flex-direction: row-reverse;
+    height:100%;
+
   }
+  .herobutton{
+    position:absolute;
+    right:0px;
+
+  }
+
+  .heropane{
+    display:block;
+    opacity:0%;
+  }
+  .heropane button{
+    font-size:13pt;
+    right:13%;
+    width:150px;
+    height:80px;
+    top:15%;
+  }
+
+  .jbhero{
+    Position:absolute;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display:grid;
+    grid-template-columns:auto auto auto auto auto auto auto ;
+    grid-template-rows:auto auto auto auto  ;
+    width:100%;
+    height:80%;
+    grid-column-gap:0px;
+    z-index:102;
+    justify-content: center;
+    align-content: center;
+    margin:0px;
+    padding:0px;
+    grid-template-areas:
+    "jb0 jb1 jb2 jb3 jb4 jb5 jb6"
+    "jb7 jb8 jb9 jb10 jb11 jb12 jb13"
+    "jb14 jb15 jb16 jb17 jb18 jb19 jb20"
+    "jb21 jb22 jb23 jb24 jb25 jb26 jb27";
+  }
+
+  .tileimage{
+  width:100%;
+  transform: scale(0);
+  }
+
+  .jb0{
+    grid-area:jb0;
+    animation: logotile 3s forwards;
+  }
+  .jb1{
+    grid-area:jb1;
+    animation: logotile 3s forwards;
+    animation-delay:.1s;
+  }
+  .jb2{
+    grid-area:jb2;
+    animation: logotile 3s forwards;
+    animation-delay:.2s;
+  }
+  .jb3{
+    grid-area:jb3;
+    animation: logotile 3s forwards;
+    animation-delay:.3s;
+  }
+  .jb4{
+    grid-area:jb4;
+    animation: logotile 3s forwards;
+    animation-delay:.4s;
+  }
+  .jb5{
+    grid-area:jb5;
+    animation: logotile 3s forwards;
+    animation-delay:.5s;
+  }
+  .jb6{
+    grid-area:jb6;
+    animation: logotile 3s forwards;
+    animation-delay:.6s;
+  }
+  .jb7{
+    grid-area:jb7;
+    animation: logotile 3s forwards;
+    animation-delay:.1s;
+  }
+  .jb8{
+    grid-area:jb8;  
+    animation: logotile 3s forwards;
+    animation-delay:.2s;
+  }
+  .jb9{
+    grid-area:jb9;
+    animation: logotile 3s forwards;
+    animation-delay:.3s;
+  }
+  .jb10{
+    grid-area:jb10;
+    animation: logotile 3s forwards;
+    animation-delay:.4s;
+  }
+  .jb11{
+    grid-area:jb11;
+    animation: logotile 3s forwards;
+    animation-delay:.5s;
+  }
+  .jb12{
+    grid-area:jb12;
+    animation: logotile 3s forwards;
+    animation-delay:.6s;
+  }
+  .jb13{
+    grid-area:jb13;
+    animation: logotile 3s forwards;
+    animation-delay:.7s;
+  }
+  .jb14{
+    grid-area:jb14;
+    animation: logotile 3s forwards;
+    animation-delay:.2s;
+  }
+  .jb15{
+    grid-area:jb15;
+    animation: logotile 3s forwards;
+    animation-delay:.3s;
+  }
+  .jb16{
+    grid-area:jb16;
+    animation: logotile 3s forwards;
+    animation-delay:.4s;
+    
+  }
+  .jb17{
+    grid-area:jb17;
+    animation: logotile 3s forwards;
+    animation-delay:.5s;
+  }
+  .jb18{
+    grid-area:jb18;
+    animation: logotile 3s forwards;
+    animation-delay:.6s;
+  }
+  .jb19{
+    grid-area:jb19;
+    animation: logotile 3s forwards;
+    animation-delay:.7s;
+  }
+  .jb20{
+    grid-area:jb20;
+    animation: logotile 3s forwards;
+    animation-delay:.8s;
+  }
+  .jb21{
+    grid-area:jb21;
+    animation: logotile 3s forwards;
+    animation-delay:.3s;
+  }
+  .jb22{
+    grid-area:jb22;
+    animation: logotile 3s forwards;
+    animation-delay:.4s;
+  }
+  .jb23{
+    grid-area:jb23;
+    animation: logotile 3s forwards;
+    animation-delay:.5s;
+    
+  }
+  .jb24{
+    grid-area:jb24;
+    animation: logotile 3s forwards;
+    animation-delay:.6s;
+
+  }
+  .jb25{
+    grid-area:jb25;
+    animation: logotile 3s forwards;
+    animation-delay:.7s;
+  }
+  .jb26{
+    grid-area:jb26;
+    animation: logotile 3s forwards;
+    animation-delay:.8s;
+  }
+  .jb27{
+    grid-area:jb27;
+    animation: logotile 3s forwards;
+    animation-delay:.9s;
+    
+  }
+  
+
+
   .toprightimage{
     position:absolute;
   }
 
+  .downarrow {
+    position:relative;
+    z-index: 115;
+    width:4%;
+    right:48%;
+    left:48%;
+  animation: bop 1s infinite;
+  }
 
 /* My UX Skills section coded using CSS flex */
 /* my skills */
@@ -140,6 +354,11 @@ margin:0px 0px 50px 0px;
   object-fit:cover;
   border-bottom: 5px solid #8C94A4;
 }
+
+.skillarea:hover { 
+  animation: embiggen 1s forwards;
+ 
+  }
 
 /* my work */
 #mywork{
@@ -203,6 +422,9 @@ padding:25px;
   border-radius: 10px;
   border-bottom: 5px solid #8C94A4;
   
+}
+.workimg:hover{
+  animation: embiggen 1s forwards;
 }
 
 
@@ -332,6 +554,11 @@ width:100%;
 
   }
   @media only screen and (max-width:1000px){
+    .heropane button{
+      right:8%;
+
+      top:14%;
+    }
 
     .topnav-right{
       display:block;
@@ -362,6 +589,11 @@ width:100%;
   }
   @media only screen and (max-width:820px){
 
+    .heropane button{
+      right:5%;
+
+      top:13%;
+    }
 
 .workimagearea{
   display:flex;
@@ -388,6 +620,11 @@ width:100%;
 
   @media only screen and (max-width:600px){
 
+    .heropane button{
+      right:2%;
+
+      top:12%;
+    }
     .topnav-right{
       display:block;
     }
@@ -402,3 +639,124 @@ width:100%;
     }
 
   }
+
+  /*@keyframes logotile {
+    from{
+      opacity:100%;
+  transform:scale(0);
+    }
+  
+    12%{
+      transform:scale(1.01);
+      opacity:100%;
+    }
+
+    24%{
+      transform:scale(1.01);
+      opacity:100%;
+    }
+
+    36%{
+      transform:scale(1.01);
+      opacity:100%;
+    }
+    
+    48%{
+  
+      opacity:100%;
+  transform:scale(0);
+    }
+  
+    60%{
+      transform:scale(1.01);
+      opacity:100%;
+    }
+
+    72%{
+      transform:scale(1.01);
+      opacity:100%;
+    }
+
+    84%{
+      transform:scale(1.01);
+      opacity:100%;
+    }
+    97%{
+      opacity:0%;
+      transform:scale(0);
+      transform:translatex(2000px);
+    }
+    
+    to{
+  
+      opacity:100%;
+  transform:scale(0);
+    }
+  }
+  */
+
+  @keyframes logotile {
+    from{
+      opacity:100%;
+  transform:scale(0);
+    }
+  
+    25%{
+      transform:scale(1.01);
+      opacity:100%;
+    }
+
+    50%{
+      transform:scale(1.01);
+      opacity:100%;
+    }
+
+    75%{
+      transform:scale(1.01);
+      opacity:100%;
+    }
+    
+    
+    97%{
+      opacity:0%;
+      transform:scale(0);
+      transform:translatex(2000px);
+    }
+    
+    to{
+  
+      opacity:100%;
+  transform:scale(0);
+    }
+  }
+
+    
+  @keyframes bop {
+    from{
+      transform:translatey(-150%);
+    }
+  
+    50%{
+      transform:translatey(-180%);
+    }
+    
+    to{
+      transform:translatey(-150%);
+    }
+  }
+  @keyframes fadein {
+from{
+  opacity: 0%;
+}
+to{
+  opacity: 100%;
+}
+
+  }
+  @keyframes embiggen {
+    from{transform: scale(1);
+    }
+    to{
+      transform: scale(1.1);
+    }
+    }
