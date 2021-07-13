@@ -10,15 +10,21 @@ body {
     background-color:#EAECED;
     
     border-bottom: 5px solid #8C94A4;
-align-items: center;    
-
+    align-items: center;    
+    position:fixed;
+    width:100%;
+    z-index:101;
   } 
 
-  .topleft {
-  
+  .topgap{
+    height:10vh;
+
   }
+
+
   .logo{
-    width:80px;
+    height:9vh;
+    width:11vh;
     padding:10px;
   }
   
@@ -36,15 +42,17 @@ padding:15px;
     display:flex;
     width: 250px;
     justify-content:space-between;
+    margin:0px 0px 0px 25px;  
   }
 
-  .topnav a {
+  .navbutton {
     color: black;
     text-align: center;
-    font-size:25px;
+    font-size:17pt;
     font-family: 'Montserrat', sans-serif;
-    font-style:bold;
-  
+    font-style:normal;
+    padding:0px 15px;
+
   }
   
   .topnav a:hover {
@@ -62,9 +70,11 @@ padding:15px;
 
   }
 
-  .toprightimage{
-border:solid red 1px;
-  }
+  
+
+
+
+  
 
   button{
     width:150px;
@@ -85,16 +95,258 @@ border:solid red 1px;
 
 
   /* Hero */
-
   .hero{
-    display:block;
-    width:100%;
-    flex-direction: row-reverse;
+    height:100vh;
   }
+.heroimage{
+  width:100%;
+  height:90vh;
+  overflow: hidden;
+  object-fit:cover;
+}
+
+  .heropane .textbox{
+    position:absolute;
+    right:12%;
+    top: calc(5% + 100px);
+    width:38%;
+    text-align: center;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    font-size:17pt;
+    background-color: rgba(170,174,182,0.3);
+    border-radius:10px;
+
+  }
+.heropane p{
+  padding-left:25px;
+  padding-right:25px;
+}
+
+
+  .herodesk{
+    animation: fadein 1s ease;
+  }
+  .herotab{
+    display:none;
+  }
+  .heromob{
+    display:none;
+  }
+  .herobutton{
+    position:absolute;
+    right:0px;
+
+  }
+
+  .heropane{
+    display:block;
+    opacity:0%;
+    height:100%;
+
+    max-height:100%;
+
+  }
+  .heropane button{
+    font-size:13pt;
+    right:13%;
+    width:150px;
+    height:80px;
+    top:15%;
+  }
+
+  .jbhero{
+    background-image:url("https://jeffreyboehme.github.io/UX_UI_HW_19/images/backing.jpg");
+    Position:absolute;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display:grid;
+    grid-template-columns:11% 11% 11% 11% 11% 11% 11%;
+    grid-template-rows:20% 20% 20% 20% ;
+    width:100%;
+    height:100%;
+    grid-column-gap:0px;
+    z-index:102;
+    justify-content: center;
+    align-content: center;
+    margin:0px;
+    padding:0px;
+    grid-template-areas:
+    "jb0 jb1 jb2 jb3 jb4 jb5 jb6"
+    "jb7 jb8 jb9 jb10 jb11 jb12 jb13"
+    "jb14 jb15 jb16 jb17 jb18 jb19 jb20"
+    "jb21 jb22 jb23 jb24 jb25 jb26 jb27";
+    overflow-x:hidden;
+    overflow-y: auto;
+  }
+
+  .tileimage{
+    
+    width: 100%;
+    height: 100%;
+  transform: scale(0);
+  }
+
+  .jb0{
+    grid-area:jb0;
+    animation: logotile 3s forwards;
+  }
+  .jb1{
+    grid-area:jb1;
+    animation: logotile 3s forwards;
+    animation-delay:.1s;
+  }
+  .jb2{
+    grid-area:jb2;
+    animation: logotile 3s forwards;
+    animation-delay:.2s;
+  }
+  .jb3{
+    grid-area:jb3;
+    animation: logotile 3s forwards;
+    animation-delay:.3s;
+  }
+  .jb4{
+    grid-area:jb4;
+    animation: logotile 3s forwards;
+    animation-delay:.4s;
+  }
+  .jb5{
+    grid-area:jb5;
+    animation: logotile 3s forwards;
+    animation-delay:.5s;
+  }
+  .jb6{
+    grid-area:jb6;
+    animation: logotile 3s forwards;
+    animation-delay:.6s;
+  }
+  .jb7{
+    grid-area:jb7;
+    animation: logotile 3s forwards;
+    animation-delay:.1s;
+  }
+  .jb8{
+    grid-area:jb8;  
+    animation: logotile 3s forwards;
+    animation-delay:.2s;
+  }
+  .jb9{
+    grid-area:jb9;
+    animation: logotile 3s forwards;
+    animation-delay:.3s;
+  }
+  .jb10{
+    grid-area:jb10;
+    animation: logotile 3s forwards;
+    animation-delay:.4s;
+  }
+  .jb11{
+    grid-area:jb11;
+    animation: logotile 3s forwards;
+    animation-delay:.5s;
+  }
+  .jb12{
+    grid-area:jb12;
+    animation: logotile 3s forwards;
+    animation-delay:.6s;
+  }
+  .jb13{
+    grid-area:jb13;
+    animation: logotile 3s forwards;
+    animation-delay:.7s;
+  }
+  .jb14{
+    grid-area:jb14;
+    animation: logotile 3s forwards;
+    animation-delay:.2s;
+  }
+  .jb15{
+    grid-area:jb15;
+    animation: logotile 3s forwards;
+    animation-delay:.3s;
+  }
+  .jb16{
+    grid-area:jb16;
+    animation: logotile 3s forwards;
+    animation-delay:.4s;
+    
+  }
+  .jb17{
+    grid-area:jb17;
+    animation: logotile 3s forwards;
+    animation-delay:.5s;
+  }
+  .jb18{
+    grid-area:jb18;
+    animation: logotile 3s forwards;
+    animation-delay:.6s;
+  }
+  .jb19{
+    grid-area:jb19;
+    animation: logotile 3s forwards;
+    animation-delay:.7s;
+  }
+  .jb20{
+    grid-area:jb20;
+    animation: logotile 3s forwards;
+    animation-delay:.8s;
+  }
+  .jb21{
+    grid-area:jb21;
+    animation: logotile 3s forwards;
+    animation-delay:.3s;
+  }
+  .jb22{
+    grid-area:jb22;
+    animation: logotile 3s forwards;
+    animation-delay:.4s;
+  }
+  .jb23{
+    grid-area:jb23;
+    animation: logotile 3s forwards;
+    animation-delay:.5s;
+    
+  }
+  .jb24{
+    grid-area:jb24;
+    animation: logotile 3s forwards;
+    animation-delay:.6s;
+
+  }
+  .jb25{
+    grid-area:jb25;
+    animation: logotile 3s forwards;
+    animation-delay:.7s;
+  }
+  .jb26{
+    grid-area:jb26;
+    animation: logotile 3s forwards;
+    animation-delay:.8s;
+  }
+  .jb27{
+    grid-area:jb27;
+    animation: logotile 3s forwards;
+    animation-delay:.9s;
+    
+  }
+  
+
+
   .toprightimage{
     position:absolute;
   }
 
+  .downarrow {
+    position:absolute;
+    z-index: 115;
+    width:4%;
+    top:100vh;
+    right:48%;
+    left:48%;
+  animation: bop 1s infinite;
+  }
 
 /* My UX Skills section coded using CSS flex */
 /* my skills */
@@ -105,27 +357,37 @@ position:relative;
 
 #myskills h1{
 text-align: center;
+font-size:25pt;
 }
+#myskills p{
+  text-align: center;
+  font-size:20pt;
+  }
 
 .flexcontainer{
 display: flex;
 flex-direction: row;
 flex-wrap: wrap;
 justify-content: space-around;
+column-gap: 50px;
+height:auto;
 
 }
 
 .flexcontainer .p{
   width:30%;
+
 }
 
 .skillarea{
 width: 400px;
 margin:0px 0px 50px 0px;
+text-align:center;
 }
 
 .skillarea h3{
   padding-left: 25px;
+  font-size: 25pt;
 }
 
 .skillarea p{
@@ -141,6 +403,11 @@ margin:0px 0px 50px 0px;
   border-bottom: 5px solid #8C94A4;
 }
 
+.skillarea:hover { 
+  animation: embiggen 1s forwards;
+ 
+  }
+
 /* my work */
 #mywork{
   background-position: center;
@@ -150,110 +417,89 @@ margin:0px 0px 50px 0px;
   display: flex;
   position: relative;
   flex-direction: column;
-  
+  width:100%;
+  height:100%;
+}
+.mywork h1{
+  width:100%;
 }
 
 .workgrid{
   display:grid;
-width:100%;
-  grid-template-columns:400px 1fr;
-  grid-template-rows:300px 300px 300px;
+  width:100%;
+  height:110%;
+  grid-template-columns:40% 60%;
+  grid-template-rows:auto auto auto;
   grid-template-areas:
   "workimg1 workinfo1"
   "workimg2 workinfo2"
   "workimg3 workinfo3";
-  grid-column-gap: 50px;
+
+  overflow:auto;
+
 }
 
 #mywork h1{
+font-size: 25pt;
+}
+.workgrid h4{
+  font-size: 25pt;
+  padding-top:0px;
+  margin:0px;
+}
+.workgrid p{
+  font-size: 20pt;
 
 }
 
 #workimg1{
+  padding:15px;
   grid-area: workimg1;
 }
 #workinfo1{
+  padding:15px;
   grid-area: workinfo1;
 }
 #workimg2{
+  padding:15px;
   grid-area: workimg2;
 }
 #workinfo2{
+  padding:15px;
   grid-area: workinfo2;
 }
 #workimg3{
+  padding:15px;
   grid-area: workimg3;
 }
 #workinfo3{
+  padding:15px;
   grid-area: workinfo3;
 }
 .workimagearea{
-padding:25px;
+padding:1%;
+margin:0px;
 
 }
 
 .workinfoarea{
-  padding:25px;
-
+  padding:15px;
+  margin:0px;
 }
 
 
 .workimg{
-  width:400px;
+  width:90%;
   border-radius: 10px;
   border-bottom: 5px solid #8C94A4;
   
 }
-
-
-.projectbox{
-
-width:900px;
-height:200px;
+.workimg:hover{
+  animation: embiggen 1s forwards;
 }
 
-.box1{
 
-margin-left:400px;
-margin-top:105px;
-}
-.box2{
 
-margin-left:550px;
-margin-top:350px;
-}
-.box3{
-
-margin-left:700px;
-margin-top:600px;
-}
-
-.projectimage{
-float:left;
-margin-left:0px;
-}
-.projecttext{
-float:right;
-  margin-right:0px;
-  margin-top:0px;
-
-  height:200px;
-  width:550px;
-}
-
-.aboutme{
- 
-  width:300px;
-  margin-top:400px;
-  margin-left:100px;
-
-}
-
-  .dropin{
-    margin-left:20%;
-    
-  }
-  
 
 
 
@@ -293,7 +539,7 @@ float:right;
     position: relative;
     left: 0;
     bottom: 0;
-margin-top:100px;
+    margin-top:100px;
     width: 100%;
   }
   .bottombackgroundimg{
@@ -303,6 +549,10 @@ margin-top:100px;
     z-index: 0;
   }
 
+  .dropin{
+    margin-left:15%;
+
+  }
   footer a{
     overflow: hidden;
   }
@@ -312,26 +562,47 @@ margin-top:100px;
   }
 
   .bottomtable{
-width:100%;
+    width:100%;
     text-align: center;
-    font-size:20px;
+    font-size:20pt;
     font-family: 'Montserrat', sans-serif;
-
+    table-layout: fixed;
   }
 
   .bottomleft{
-    float: left;
+text-align: left;
   }
 
-  .bottomcenter{
-    float: center;
-  }
+
 
   .bottomright{
-    float: right;
+text-align: right;
 
   }
-  @media only screen and (max-width:1000px){
+  th{
+    font-size:20pt;
+    width:33%;
+
+  }
+  
+  @media only screen and (max-width:1011px){
+    .heropane button{
+      right:8%;
+
+      top:14%;
+    }
+    .herodesk{
+      display:none;
+    }
+    .herotab{
+      display:block;
+      animation: fadein 1s ease;
+    }
+    .heropane .textbox{
+      right:2%;  
+      width: 40%;
+      animation: fadein 1s ease;
+    }
 
     .topnav-right{
       display:block;
@@ -342,14 +613,13 @@ width:100%;
     .topnav{
       justify-content:space-between;
     }
-    .name{
-
-    }
+ 
     .workgrid{
       display:grid;
-    width:100%;
+      width:100%;
+    
       grid-template-columns:100%;
-      grid-template-rows:300px 300px 300px 300px 300px 300px;
+      grid-template-rows:auto auto auto auto auto auto;
       grid-template-areas:
       "workimg1"
       "workinfo1"
@@ -357,37 +627,126 @@ width:100%;
       "workinfo2"
       "workimg3" 
       "workinfo3";
+      padding:0px;
 
     }
+    
+    .workinfoarea{
+      padding:0px;
+    }
+    .workimg{
+      width:90%;
+      padding:0px;
+    }
+    .workimagearea{
+      display:flex;
+      justify-content:center;
+      width: 100%;
+      padding:0px;
+    }
+    .workgrid h4{
+      text-align: center;
+    
+    }
+    .workgrid p{
+      text-align: center;
+    
+    }
+    .workinfoarea{
+      display:flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .downarrow {
+      width:10%;
+      top:105vh;
+      right:45%;
+      left:45%;
+    }
+    #workimg1{
+      padding:0px;
+    }
+    #workimg2{
+      padding:0px;
+    }
+    #workimg3{
+      padding:0px;
+    }
   }
-  @media only screen and (max-width:820px){
+  @media only screen and (max-width:866px){
+    .skillarea img{
+      width:95%;
+    }
+    .heropane button{
+      right:5%;
 
+      top:13%;
+    }
+    .skillarea{
+      width: 100%;
+      margin:0px 0px 50px 0px;
+      }
 
-.workimagearea{
-  display:flex;
-  justify-content:center;
+    .workimagearea{
+      display:flex;
+      justify-content:center;
+    width: 100%;
+    }
+    .dropin{
+      margin-left:15%;
 
-}
-.dropin{
-  margin-left:15%;
-}
-.bottommenu a{
-  padding: 14px 0px;
-}
-.workinfoarea{
-  display:flex;
-  flex-direction: column;
-  align-items: center;
-}
-.skillarea{
-  display:flex;
-  flex-direction: column;
-  align-items: center;
-}
+    }
+    .bottommenu a{
+      padding: 14px 0px;
+    }
+    .workinfoarea{
+      display:flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .skillarea{
+      display:flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .workgrid h4{
+      text-align: center;
+
+    }
+    .workgrid p{
+      text-align: center;
+
+    }
+    .skillimg{
+
+      height:auto;
+
+    }
   }
 
   @media only screen and (max-width:600px){
 
+    .heropane .textbox{
+      left:15%;  
+      width: 70%;
+      right:15%;
+      animation: fadein 1s ease;
+    }
+    .skillarea img{
+      width:100%;
+    }
+    .herotab{
+      display:none;
+    }
+    .heromob{
+      animation: fadein 1s ease;
+      display:block;
+    }
+    .heropane button{
+      right:2%;
+
+      top:12%;
+    }
     .topnav-right{
       display:block;
     }
@@ -397,8 +756,143 @@ width:100%;
     .name{
       display:none;
     }
-    button{
-
+    .bottomleft{
+      text-align: center;
+    }
+    .bottomright{
+      text-align: center;
+    }
+    .dropin{
+      margin:0;
+      text-align:center;
+    }
+    .downarrow {
+      width:16%;
+      top:100vh;
+      right:42%;
+      left:42%;
     }
 
+
   }
+
+  /*@keyframes logotile {
+    from{
+      opacity:100%;
+  transform:scale(0);
+    }
+  
+    12%{
+      transform:scale(1.01);
+      opacity:100%;
+    }
+
+    24%{
+      transform:scale(1.01);
+      opacity:100%;
+    }
+
+    36%{
+      transform:scale(1.01);
+      opacity:100%;
+    }
+    
+    48%{
+  
+      opacity:100%;
+  transform:scale(0);
+    }
+  
+    60%{
+      transform:scale(1.01);
+      opacity:100%;
+    }
+
+    72%{
+      transform:scale(1.01);
+      opacity:100%;
+    }
+
+    84%{
+      transform:scale(1.01);
+      opacity:100%;
+    }
+    97%{
+      opacity:0%;
+      transform:scale(0);
+      transform:translatex(2000px);
+    }
+    
+    to{
+  
+      opacity:100%;
+  transform:scale(0);
+    }
+  }
+  */
+
+  @keyframes logotile {
+    from{
+      opacity:100%;
+  transform:scale(0);
+    }
+  
+    25%{
+      transform:scale(1.01);
+      opacity:100%;
+    }
+
+    50%{
+      transform:scale(1.01);
+      opacity:100%;
+    }
+
+    75%{
+      transform:scale(1.01);
+      opacity:100%;
+    }
+    
+    
+    97%{
+      opacity:0%;
+      transform:scale(0);
+      transform:translatex(2000px);
+    }
+    
+    to{
+  
+      opacity:100%;
+  transform:scale(0);
+    }
+  }
+
+    
+  @keyframes bop {
+    from{
+      transform:translatey(-150%);
+    }
+  
+    50%{
+      transform:translatey(-180%);
+    }
+    
+    to{
+      transform:translatey(-150%);
+    }
+  }
+  @keyframes fadein {
+from{
+  opacity: 0%;
+}
+to{
+  opacity: 100%;
+}
+
+  }
+  @keyframes embiggen {
+    from{transform: scale(1);
+    }
+    to{
+      transform: scale(1.05);
+    }
+    }
